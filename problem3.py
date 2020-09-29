@@ -6,3 +6,17 @@
 # If they get the password correct (password is 12345password) 
 # then display the message "Access granted"
 # 1 marks
+uname=input("Enter a username ")
+realUname="admin" in uname
+if realUname==False:
+    print("invalid user")
+    quit()
+
+pword=input("Enter a password ")
+if pword != "12345password":
+    print("incorrect password")
+    quit()
+elif pword=="12345password":
+    print("Access granted")
+
+    
