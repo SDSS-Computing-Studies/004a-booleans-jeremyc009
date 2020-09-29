@@ -21,7 +21,9 @@ A=float(input("Input a number for A: "))
 B=float(input("Input a number for B: "))
 C=float(input("Input a number for C: "))
 disc=(B**2)-(4*A*C)
-if ((disc**disc)%disc)==0:
+if disc==0:
+    print("the equation cannot be factored")
+elif (((disc**disc)%disc)==0) :
     print("the equation can be factored")
 else:
     print("the equation can not be factored")
