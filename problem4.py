@@ -34,12 +34,12 @@ elif hyp==num3:
     s2=num2
 hyp2=math.sqrt(s1**2 + s2**2)
 deci=hyp2/hyp
-frac=deci-1
+frac=abs(deci)-1
 final=frac*100
-coHyp=math.degrees(math.acos((s1*s1 + s2*s2 - hyp*hyp)/(2*s1*s2)))
-coS1=math.degrees(math.acos((hyp*hyp + s2*s2 - s1*s1)/(2*hyp*s2)))
-coS2=math.degrees(math.acos((hyp*hyp + s1*s1 - s2*s2)/(2*hyp*s1)))
-if coHyp>90 or coS1>90 or coS2>90:
+coHyp=round(math.degrees(math.acos((s1*s1 + s2*s2 - hyp*hyp)/(2*s1*s2))),5)
+coS1=round(math.degrees(math.acos((hyp*hyp + s2*s2 - s1*s1)/(2*hyp*s2))),5)
+coS2=round(math.degrees(math.acos((hyp*hyp + s1*s1 - s2*s2)/(2*hyp*s1))),5)
+if (coHyp>90 or coS1>90 or coS2>90) and final>2:
     obtuse="that is an obtuse triangle"
     print(obtuse)
     quit()
@@ -50,4 +50,3 @@ elif coHyp<90 and coS1<90 and coS2<90:
 
 elif final<=2 :
     print("that is a right triangle")
-
