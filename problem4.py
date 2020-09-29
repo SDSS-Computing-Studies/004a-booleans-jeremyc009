@@ -35,7 +35,7 @@ elif hyp==num3:
 hyp2=math.sqrt(s1**2 + s2**2)
 deci=hyp2/hyp
 frac=abs(deci)-1
-final=frac*100
+final=abs(frac)*100
 coHyp=round(math.degrees(math.acos((s1*s1 + s2*s2 - hyp*hyp)/(2*s1*s2))),5)
 coS1=round(math.degrees(math.acos((hyp*hyp + s2*s2 - s1*s1)/(2*hyp*s2))),5)
 coS2=round(math.degrees(math.acos((hyp*hyp + s1*s1 - s2*s2)/(2*hyp*s1))),5)
