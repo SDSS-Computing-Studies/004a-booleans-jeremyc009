@@ -17,11 +17,11 @@ num1=float(input("Enter the first number "))
 num2=float(input("Enter the second number "))
 num3=float(input("Enter the third number "))
 # hyp is meant to represent the side with longest length, not necessarily the hypotenuse (if it's not a right triangle)
-if num1>num2 and num1>num3:
+if num1>=num2 and num1>=num3:
     hyp=num1
-elif num2>num1 and num2>num3:
+elif num2>=num1 and num2>=num3:
     hyp=num2
-elif num3>num1 and num3>num2:
+elif num3>=num1 and num3>=num2:
     hyp=num3
 if hyp==num1:
     s1=num2
